@@ -115,7 +115,7 @@ void send_pkts(foggy_socket_t *sock, uint8_t *data, int buf_len) {
   }
   receive_send_window(sock);
 }
-
+ 
 
 void add_receive_window(foggy_socket_t *sock, uint8_t *pkt) {
   foggy_tcp_header_t *hdr = (foggy_tcp_header_t *)pkt;
