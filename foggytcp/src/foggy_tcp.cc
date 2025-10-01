@@ -56,7 +56,7 @@ void* foggy_socket(const foggy_socket_type_t socket_type,
   sock->window.last_byte_sent = 0;
   sock->window.last_ack_received = 0;
   sock->window.dup_ack_count = 0;
-  sock->window.next_seq_expected = 10;
+  sock->window.next_seq_expected = 30000;
   sock->window.ssthresh = WINDOW_INITIAL_SSTHRESH;
   sock->window.advertised_window = WINDOW_INITIAL_ADVERTISED;
   sock->window.congestion_window = WINDOW_INITIAL_WINDOW_SIZE;
